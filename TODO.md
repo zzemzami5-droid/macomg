@@ -1,0 +1,5 @@
+- [x] Update edX product image src from assets/edx.svg to assets/edx.jpeg
+- [x] Update Coursera product image src from assets/coursera.svg to assets/coursera.jpeg
+- [x] Update Busuu product image src from assets/busuu.svg to assets/busuu.jpeg
+- [x] Update Udemy product image src from assets/udemy.svg to assets/udemy.jpeg
+- [x] Verify the changes by checking the updated HTML
