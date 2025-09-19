@@ -6,13 +6,42 @@
   <title>MACOMG — Digital Courses & Subscriptions</title>
   <meta name="description" content="Buy digital course subscriptions from edX, Coursera, Busuu, Udemy. Pay with PayPal or order via WhatsApp. Multilingual: English, Français, العربية."/>
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="new-header-styles.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Replaced old header with new simple menu header -->
-  
+
+<header class="header-pro">
+  <div class="container-pro">
+    <div class="logo-pro" aria-label="MACOMG Logo" role="img">
+      <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="32" r="30" fill="#0ea5e9"/>
+        <text x="32" y="40" font-family="Arial, sans-serif" font-size="28" fill="#fff" font-weight="bold" text-anchor="middle">M</text>
+      </svg>
+      <span class="logo-text">MACOMG</span>
+    </div>
+    <button class="hamburger-pro" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu-pro">
+      <span class="hamburger-icon">☰</span>
+    </button>
+    <nav id="nav-menu-pro" class="nav-pro" role="navigation" aria-label="Primary navigation">
+      <a href="#products" class="nav-link-pro">Products</a>
+      <a href="#checkout" class="nav-link-pro">Checkout</a>
+      <a href="#terms" class="nav-link-pro">Terms</a>
+      <a href="#contact" class="nav-link-pro">Contact</a>
+    </nav>
+    <div class="header-actions-pro">
+      <a href="#signin" class="sign-in-pro">Sign In</a>
+      <a href="#join" class="join-now-pro">JOIN NOW</a>
+      <button class="globe-btn-pro" aria-label="Select language or region">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-1.85.63-3.55 1.69-4.9l10.21 10.21A7.93 7.93 0 0112 20zm6.31-3.1L8.1 6.69A7.93 7.93 0 0118 12c0 1.85-.63 3.55-1.69 4.9z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
 
   <div class="overlay"></div>
 
@@ -51,7 +80,7 @@
           <p class="desc" data-i18n="products.edx.desc">Access edX verified courses and professional certificates.</p>
           <div class="price-row">
             <span class="price">$30</span>
-            <span class="per" data-i18n="per.month">per annual</span>
+            <span class="per" data-i18n="per.month">per year</span>
           </div>
           <div class="actions">
             <button class="btn ghost whats-btn" data-i18n="actions.whatsapp" data-name="edX" data-price="30">Order via WhatsApp</button>
@@ -67,7 +96,7 @@
           </div>
           <p class="desc" data-i18n="products.coursera.desc">Coursera Plus style access for top universities.</p>
           <div class="price-row">
-            <span class="price">$25</span><span class="per" data-i18n="per.month">per annual</span>
+            <span class="price">$25</span><span class="per" data-i18n="per.month">per year</span>
           </div>
           <div class="actions">
             <button class="btn ghost whats-btn" data-i18n="actions.whatsapp" data-name="Coursera" data-price="25">Order via WhatsApp</button>
@@ -83,11 +112,11 @@
           </div>
           <p class="desc" data-i18n="products.busuu.desc">Premium language learning with community feedback.</p>
           <div class="price-row">
-            <span class="price">$30</span><span class="per" data-i18n="per.month">per annual</span>
+            <span class="price">$40</span><span class="per" data-i18n="per.month">per year</span>
           </div>
           <div class="actions">
-            <button class="btn ghost whats-btn" data-i18n="actions.whatsapp" data-name="Busuu" data-price="30">Order via WhatsApp</button>
-            <button class="btn add-btn" data-i18n="actions.add" data-name="Busuu" data-price="30">Add to Checkout</button>
+            <button class="btn ghost whats-btn" data-i18n="actions.whatsapp" data-name="Busuu" data-price="40">Order via WhatsApp</button>
+            <button class="btn add-btn" data-i18n="actions.add" data-name="Busuu" data-price="40">Add to Checkout</button>
           </div>
         </article>
 
@@ -137,7 +166,7 @@
           <select name="product" id="product-select">
             <option value="edX|30">edX — $30</option>
             <option value="Coursera|25">Coursera — $25</option>
-            <option value="Busuu|30">Busuu — $30</option>
+            <option value="Busuu|30">Busuu — $40</option>
             <option value="Udemy|12">Udemy — $12</option>
           </select>
         </div>
