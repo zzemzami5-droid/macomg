@@ -14,7 +14,7 @@
 .container-pro {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -155,8 +155,16 @@
 
 /* Responsive */
 @media (max-width: 720px) {
+  .container-pro {
+    padding: 0;
+  }
   .nav-pro {
     display: none;
+    gap: 20px;
+    font-size: 1rem;
+  }
+  .nav-link-pro {
+    padding: 0.4rem 0.8rem;
   }
   .hamburger-pro {
     display: block;
@@ -166,14 +174,6 @@
   }
   .logo-text {
     font-size: 1.3rem;
-  }
-  .sign-in-pro {
-    padding: 0.4rem 0.8rem;
-    font-size: 1rem;
-  }
-  .join-now-pro {
-    padding: 0.4rem 1.2rem;
-    font-size: 1rem;
   }
   .globe-btn-pro {
     padding: 0;

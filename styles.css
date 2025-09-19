@@ -11,7 +11,7 @@
 }
 
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);width:100%;overflow-x:hidden;}
 
 /* ---------- Simple Header Styles ---------- */
 .header-simple {
@@ -302,7 +302,7 @@ body.nav-open {
 .badge:nth-child(4){bottom:20%;left:20%}
 .badge:nth-child(5){bottom:15%;right:15%}
 
-.section{padding:36px 20px}
+.section{padding:36px 0}
 .section h3{font-size:28px;margin:0 0 16px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
