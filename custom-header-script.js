@@ -1,37 +1,29 @@
-const hamburgerBtn = document.createElement('button');
-hamburgerBtn.className = 'hamburger-custom';
-hamburgerBtn.setAttribute('aria-label', 'Toggle menu');
-hamburgerBtn.setAttribute('aria-expanded', 'false');
-hamburgerBtn.innerHTML = '&#9776;';
-
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('.container-custom');
-  const nav = document.querySelector('.nav-custom');
+  const hamburgerBtn = document.querySelector('.hamburger-pro');
+  const navMenu = document.getElementById('nav-menu-pro');
 
-  if (container && nav) {
-    container.insertBefore(hamburgerBtn, nav);
-
+  if (hamburgerBtn && navMenu) {
     hamburgerBtn.addEventListener('click', () => {
       const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
       hamburgerBtn.setAttribute('aria-expanded', String(!expanded));
       if (expanded) {
-        nav.style.display = 'none';
+        navMenu.style.display = 'none';
       } else {
-        nav.style.display = 'flex';
-        nav.style.flexDirection = 'column';
-        nav.style.position = 'absolute';
-        nav.style.top = '56px';
-        nav.style.left = '0';
-        nav.style.right = '0';
-        nav.style.backgroundColor = '#111827';
-        nav.style.padding = '1rem';
-        nav.style.zIndex = '120';
+        navMenu.style.display = 'flex';
+        navMenu.style.flexDirection = 'column';
+        navMenu.style.position = 'absolute';
+        navMenu.style.top = '56px';
+        navMenu.style.left = '0';
+        navMenu.style.right = '0';
+        navMenu.style.backgroundColor = '#0b3d91';
+        navMenu.style.padding = '1rem';
+        navMenu.style.zIndex = '150';
       }
     });
   }
 
   // Globe button handler
-  const globeBtn = document.querySelector('.globe-btn-custom');
+  const globeBtn = document.querySelector('.globe-btn-pro');
   if (globeBtn) {
     globeBtn.addEventListener('click', () => {
       alert('Language/region selector clicked. Implement as needed.');

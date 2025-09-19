@@ -285,30 +285,4 @@ if (hamburger && menuPanel){
   });
 }
 
-// ===== New header hamburger menu logic =====
-const hamburgerPro = document.querySelector('.hamburger-pro');
-const navMenuPro = document.getElementById('nav-menu-pro');
 
-function closeMenuPro(){
-  if (!navMenuPro) return;
-  navMenuPro.classList.remove('open');
-  document.body.classList.remove('nav-open');
-  if (hamburgerPro) hamburgerPro.setAttribute('aria-expanded', 'false');
-}
-
-function openMenuPro(){
-  if (!navMenuPro) return;
-  navMenuPro.classList.add('open');
-  document.body.classList.add('nav-open');
-  if (hamburgerPro) hamburgerPro.setAttribute('aria-expanded', 'true');
-}
-
-if (hamburgerPro && navMenuPro){
-  hamburgerPro.addEventListener('click', () => {
-    const isOpen = navMenuPro.classList.contains('open');
-    isOpen ? closeMenuPro() : openMenuPro();
-  });
-  navMenuPro.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') closeMenuPro();
-  });
-}
